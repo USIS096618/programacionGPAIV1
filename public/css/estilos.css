@@ -66,10 +66,10 @@ nav ul li div ul .titulo a {
 	padding:10px 20px;
 }
  
-.titulo.azul {background:#1a0af3;}
-.titulo.verde{background:#02f567;}
-.titulo.naranja {background:#f00094;}
-.titulo.rojo {background:#e21a04; color:rgb(5, 212, 212);}
+.titulo.azul {background:#f81616;}
+.titulo.verde{background:#f53333;}
+.titulo.naranja {background:#ee1414;}
+.titulo.rojo {background:#e21a04; color:rgb(247, 37, 37);}
  
 nav ul li div ul .titulo a:hover {
 	background:none;
