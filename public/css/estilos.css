@@ -57,7 +57,7 @@ nav ul li div ul:last-child {
 }
  
 nav ul li div ul .titulo {
-	background:rgb(243, 239, 239);
+	background:rgb(187, 15, 15);
 	color:rgb(8, 7, 7);
 }
  
@@ -66,10 +66,10 @@ nav ul li div ul .titulo a {
 	padding:10px 20px;
 }
  
-.titulo.azul {background:#f81616;}
-.titulo.verde{background:#f53333;}
-.titulo.naranja {background:#ee1414;}
-.titulo.rojo {background:#e21a04; color:rgb(247, 37, 37);}
+.titulo.azul {background:#bd0f0f;}
+.titulo.verde{background:#c42828;}
+.titulo.naranja {background:#c01c1c;}
+.titulo.rojo {background:#c51d0a; color:rgb(175, 18, 18);}
  
 nav ul li div ul .titulo a:hover {
 	background:none;
