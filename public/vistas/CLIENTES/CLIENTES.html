@@ -1,57 +1,57 @@
 
-    <form v-on:submit.prevent="guardarAlumno" class="modulos" data-accion="nuevo" data-idalumno='' id="frm-alumnos" method="post">
-        <div class="card text-white bg-dark mb-3" style="max-width: 24rem;">
+     <form v-on:submit.prevent="guardarCLIENTES" class="modulos" data-accion="nuevo" data-idCLIENTES='' id="frm-CLIENTES" method="post">
+        <div class="card text-white bg-danger mb-4" style="max-width: 26rem;">
             <div class="card-header">
-                Mantenimiento Alumnos
+                REGISTRO CLIENTES
             
-                <button type="button" id="close-alumnos" class="close" aria-label="Close">
+                <button type="button" id="close-CLIENTES" class="close" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
             <div class="card-body">
                 <div class="row p-2">
                     <div class="col-4">
-                        CODIGO
-                    </div>
-                    <div class="col-6">
-                        <input type="text" v-model="alumno.codigo" placeholder="AAAA000000" class="form-control">
-                    </div>
-                </div>
-                <div class="row p-2">
-                    <div class="col-4">
                         NOMBRE
                     </div>
-                    <div class="col-8">
-                        <input type="text" v-model="alumno.nombre" placeholder="AAA AAA" class="form-control">
+                    <div class="col-6">
+                        <input type="text" v-model="CLIENTES.NOMBRE" placeholder="AAAA" class="form-control">
                     </div>
                 </div>
                 <div class="row p-2">
                     <div class="col-4">
-                        DIRECCION
+                        DIRECICON
                     </div>
                     <div class="col-8">
-                        <input type="text" v-model="alumno.direccion" placeholder="AAA" class="form-control">
+                        <input type="text" v-model="CLIENES.DIRECCION" placeholder="AAA AAA" class="form-control">
                     </div>
                 </div>
                 <div class="row p-2">
                     <div class="col-4">
-                        TEL
+                        TELEFONO
                     </div>
                     <div class="col-8">
-                        <input type="text" v-model="alumno.telefono" placeholder="0000-0000" class="form-control">
+                        <input type="text" v-model="CLIENTES.TELEFONO" placeholder="0000-0000" class="form-control">
+                    </div>
+                </div>
+                <div class="row p-2">
+                    <div class="col-4">
+                        DUI
+                    </div>
+                    <div class="col-8">
+                        <input type="text" v-model="CLIENTES.DUI" placeholder="0000-0000" class="form-control">
                     </div>
                 </div>
                 <div class="row p-2"> 
                     <div class="col-12 text-center">
-                        <input id="btnGuardarAlumnos" type="submit" class="btn btn-outline-primary text-white" value="Guardar">
+                        <input id="btnGuardarCLIENTES" type="submit" class="btn btn-outline-primary text-white" value="Guardar">
                         <input type="reset" class="btn btn-outline-warning text-white" value="Limpiar">
-                        <input v-on:click="buscarAlumno" type="button" class="btn btn-outline-success mostrar-buscar-alumnos text-white" data-modulo="alumnos" data-form="buscar-alumnos" value="Buscar">
+                        <input v-on:click="buscarCLIENTES" type="button" class="btn btn-outline-success mostrar-buscar-CLIENTES text-white" data-modulo="CLIENTES" data-form="mostrar-buscar-CLIENTES" value="Buscar">
                     </div>
                 </div>
                 <div class="row p-2">
                     <div class="col-12 text-center">
                         <div class="alert alert-success" role="alert">
-                            {{ alumno.msg }}
+                            {{ CLIENTES.msg }}
                         </div>
                     </div>
                 </div>
@@ -59,4 +59,4 @@
         </div>
     </form>
 
-    <script src="public/vistas/alumnos/alumnos.js"></script>
+    <script src="public/vistas/CLIENTES/CLIENTES.js"></script>

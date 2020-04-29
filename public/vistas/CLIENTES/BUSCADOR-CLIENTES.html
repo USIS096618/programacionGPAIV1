@@ -1,0 +1,46 @@
+
+    <form method="POST" id="frm-buscar-CLIENTES">
+        <div class="card text-white bg-danger mb-3" style="max-width: 48rem;">
+            <div class="car-header">
+                BUSQUEDA CLIENTES
+    
+                <button v-on:click="cerrarBuscarCLIENTES" type="button" id="btn-close-buscar-CLIENTES" class="close" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="card-body">
+                <table id="tbl-buscar-CLIENTES" class="table-striped table-dark table-bordered table-hover">
+                    <thead>
+                        <tr>
+                            <th colspan="5">
+                                <input type="text" v-model="valor" v-on:keyup="buscarCLIENTES" placeholder=" nombre" class="form-control">
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>CODIGO</th>
+                            <th>NOMBRE</th>
+                            <th>DIRECCION</th>
+                            <th>TELEFONO</th>
+                            <th>DUI</th>
+                            <th> </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr v-for="clientes in misCLIENTES" :key="CLIENTES.id_clientes">
+                            <td>{{ CLIENTES.nombre }}</td>
+                            <td>{{ CLIENTES.direccion }}</td>
+                            <td>{{ CLIENTES.telefono }}</td>
+                            <td>{{ CLIENTES.dui }}</td>
+                            <td>
+                                <input v-on:click="verificacionEliminacion(CLIENTES.id_clientes)" type="button" class="btn btn-outline-danger text-white" value="Delete">
+                                <input v-on:click="modificarCLIENTES(CLIENTES)" type="button" class="btn btn-outline-warning text-white" value="Update">
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </form>
+    
+    <script src="public/vistas/CLIENTES/BUSCAR-CLIENTES.js"></script>
+    
