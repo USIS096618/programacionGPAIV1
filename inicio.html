@@ -1,11 +1,98 @@
 <!DOCTYPE html>
+
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+
+  <head>
+
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="public/css/estilos.css">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>CINE</title>
+      
+      <!-- CSS -->
+      <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css"/>
+      <!-- Default theme -->
+      <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/default.min.css"/>
+      <!-- Semantic UI theme -->
+      <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/semantic.min.css"/>
+      <!-- Bootstrap theme -->
+      <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/bootstrap.min.css"/>
+
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    </head> 
+
+  <body class="bg-dark">
+
     
-</body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+
+      <a class="navbar-brand" href="#"> OTAKUS CINEMA</a>
+
+      <ul>
+        <li class="nav-item">
+            <a id="CLIENTES" class="nav-link mostrar" data-modulo="CLIENTES" href="#">REGISTRO CLIENTES</a>
+        </li> 
+    
+        <li><a href="#">PELICULAS</a>
+        <div>
+            <ul>
+                <li class="titulo"><a href="">SUPER HEROES</a></li>
+                <li><a href="">BATMAN</a></li>
+                <li><a href="">MUJER MARAVILLA</a></li>
+                <li><a href="">AIROMAN</a></li>
+                <li><a href="">EL SORPRENDETE HOMBRE ARAÑA</a></li>
+                <li><a href="">CAPITAN AMERICA</a></li>
+                <li><a href="">AVERGER</a></li>
+            </ul>
+            <ul>
+                <li class="titulo azul"><a href="">ACCION</a></li>
+                <li><a href="">TERMINSTOR</a></li>
+                <li><a href="">SALVANDO AL SOLDADO RYAN</a></li>
+                <li><a href="">MATRIX</a></li>
+                <li><a href="">DEPREDADOR</a></li>
+                <li><a href="">ALIENS VS DEPREDADOR</a></li>
+            </ul>
+            <ul>
+                <li class="titulo verde"><a href="">TERROR</a></li>
+                <li><a href="">EL EXORCISTA</a></li>
+                <li><a href="">IT EL PAYASO</a></li>
+                <li><a href="">LA PURGA</a></li>
+                <li><a href="">DESTINO FINAL</a></li>
+                <li><a href="">CHUKY</a></li>
+                <li><a href="">DULCE VENGANZA</a></li>
+            </ul>
+            <ul>
+                <li class="titulo rojo"><a href="">AVENTURA</a></li>
+                <li><a href="">PIRATAS DEL CARIBE</a></li>
+                <li><a href="">EL SEÑOR DE LOS ANILLOS</a></li>
+                <li><a href="">HARRY POTTER</a></li>
+                <li><a href="">PARQUE JURASICO</a></li>
+                <li><a href="">PARQUE JURASICO 2 EL REGRESO</a></li>
+            </ul>
+            <ul>
+                <li class="titulo naranja"><a href="">ROMANCE</a></li>
+                <li><a href="">DIARIO DE UNA PASION</a></li>
+                <li><a href="">TITANIC</a></li>
+                <li><a href="">ORGULLO Y PREJUICIO</a></li>
+                <li><a href="">COMO SI FUERA LA PRIMERA VEZ</a></li>
+            </ul>
+        </div>
+        <li class="nav-item">
+        <a id="ALQUILER" class="nav-link mostrar" data-modulo="ALQUILER" href="#">ALQUILER DE PELICULAS</a>
+        </li>   
+    </ul> 
+    </nav>
+      <div class="modulos" id="vista-CLIENTES"></div>
+      <div class="modulos" id="modulo-vista-CLIENTES"></div>
+      <div class="modulos" id="vista-ALQUILER"></div>
+      <div class="modulos" id="modulo-vista-ALQUILER"></div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="public/js/jquery-ui.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
+    <script type="module" src="public/js/app.js"></script>
+  </body>
 </html>
