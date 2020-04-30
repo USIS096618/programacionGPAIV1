@@ -1,16 +1,7 @@
-body {
-	background:#131111;
-}
- 
-header {
-	width:90%;
-	max-width:10px;
-	margin:auto;
-}
- 
+
 nav ul {
 	list-style:none;
-	padding:0;
+	padding:10;
 	margin:0;
 	overflow:hidden;
 }
@@ -20,65 +11,21 @@ nav > ul > li {
  
 nav ul li a {
 	text-decoration:none;
-	color:rgb(235, 236, 232);
-	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	color:rgb(7, 7, 6);
+	margin-left: 120px;
+	font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 	display:block;
-	padding:10px 20px;
+	
 }
  
 nav ul li a:hover {
-	background:#dfd1d1;
+	background:#f5f4f4;
 }
  
 nav > ul > li:hover div {
 	display:table;
 }
  
-/*Submenu*/
-nav ul li div {
-	width:1000px;
-	position: absolute;
-	left:0;
-	background:rgb(255, 255, 255);
-	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-	box-sizing:border-box;
-	display:none;
-}
+
+
  
-nav ul li div ul{
-	width:20%;
-	display:table-cell;
-	border-right:5px solid rgb(17, 17, 17);
-	box-sizing:border-box;
-}
- 
-nav ul li div ul:last-child {
-	border:none;
-}
- 
-nav ul li div ul .titulo {
-	background:rgb(187, 15, 15);
-	color:rgb(8, 7, 7);
-}
- 
-nav ul li div ul .titulo a {
-	color:rgb(19, 16, 16);
-	padding:10px 20px;
-}
- 
-.titulo.azul {background:#bd0f0f;}
-.titulo.verde{background:#c42828;}
-.titulo.naranja {background:#c01c1c;}
-.titulo.rojo {background:#c51d0a; color:rgb(175, 18, 18);}
- 
-nav ul li div ul .titulo a:hover {
-	background:none;
-}
- 
-nav ul li div ul li a {
-	color:rgb(8, 8, 8);
-}
- 
-nav ul li div ul li a:hover {
-	color:rgb(20, 20, 20);
-}
