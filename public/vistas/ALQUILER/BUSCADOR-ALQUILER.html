@@ -1,41 +1,37 @@
 
-    <form method="POST" id="frm-buscar-docentes">
-        <div class="card text-white bg-dark mb-3" style="max-width: 48rem;">
+    <form method="POST" id="frm-buscar-ALQUILER">
+        <div class="card text-white bg-secondary mb-4" style="max-width: 50rem;">
             <div class="car-header">
-                BUSQUEDA DOCENTES
+                BUSQUEDA DE ALQUILER
     
-                <button type="button" id="btn-close-buscar-docentes" v-on:click="cerrarBuscarDocentes" class="close close-docentes" aria-label="Close">
+                <button type="button" id="btn-close-buscar-ALQUILER" v-on:click="cerrarBuscarALQUILER" class="close close-ALQUILER" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
             <div class="card-body">
-                <table id="tbl-buscar-docentes" class="table-striped table-dark table-bordered table-hover">
+                <table id="tbl-buscar-ALQUILER" class="table-striped table-secondary table-bordered table-hover">
                     <thead>
                         <tr>
                             <th colspan="5">
-                                <input type="text" v-model="valor" v-on:keyup="buscarDocentes" id="txtBuscarDocente" placeholder="Codigo, Nombre o NIT" class="form-control">
+                                <input type="text" v-model="valor" v-on:keyup="buscarALQUILER" id="txtBuscarALQUILER" placeholder="fecha o devolucion" class="form-control">
                             </th>
                         </tr>
                         <tr>
-                            <th>CODIGO</th>
-                            <th>NOMBRE</th>
-                            <th>DIRECCION</th>
-                            <th>TELEFONO</th>
-                            <th>NIT</th>
+                            <th>FECHA DE PRESTAMO</th>
+                            <th>FECHA DE DEVOLUCION</th>
+                            <th>VALOR</th>
                             <th colspan="2"></th>
                         </tr>
                     </thead>
                     <tbody>
 
-                        <tr v-for="docentes in data_docentes" :key="docentes.id_Docente">
-                            <td>{{ docentes.codigo }}</td>
-                            <td>{{ docentes.nombre }}</td>
-                            <td>{{ docentes.direccion }}</td>
-                            <td>{{ docentes.telefono }}</td>
-                            <td>{{ docentes.NIT }}</td>
+                        <tr v-for="ALQUILER in data_ALQUILER" :key="ALQUILER.id_ALQUILER">
+                            <td>{{ ALQUILER.FECHA }}</td>
+                            <td>{{ ALQUILER.DEVOLUCION }}</td>
+                            <td>{{ ALQUILER.VALOR }}</td>
                             <td>
-                                <input v-on:click="verificacionEliminacion(docentes.id_Docente)" type="button" class="btn btn-outline-danger text-white" value="Delete">
-                                <input v-on:click="modificarDocente(docentes)" type="button" class="btn btn-outline-warning text-white" value="Update">
+                                <input v-on:click="verificacionEliminacion(ALQUILER.id_ALQUILER)" type="button" class="btn btn-outline-danger text-white" value="Delete">
+                                <input v-on:click="modificarALQUILER(ALQUILER)" type="button" class="btn btn-outline-warning text-white" value="Update">
                             </td>
                         </tr>
                         
@@ -46,4 +42,4 @@
     </form>
     </div>
 
-    <script src="public/vistas/docentes/buscar-docentes.js"></script>
+    <script src="public/vistas/ALQUILER/BUSCADOR-ALQUILER.js"></script>
