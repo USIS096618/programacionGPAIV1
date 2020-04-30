@@ -1,0 +1,62 @@
+<form v-on:submit.prevent="guaradarPELICULAS" id="frmPELICULAS" data-accion="nuevo" data-idPELICULAS='' method="GET">
+
+    <div class="card text-white bg-secondary mb-4" style="max-width: 26rem;">
+        <div class="card-header">
+             PELICULAS
+
+            <button type="button" class="close" id="close-PELICULAS" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="card-body">
+            <div class="row p-2">
+                <div class="col-4">
+                    DESCRIPCION
+                </div>
+                <div class="col-8">
+                    <input type="text" v-model="PELICULAS.DESCRIPCION" id="txtDESCRIPCION.PELICULAS" placeholder="AAA" class="form-control">
+                </div>
+            </div>
+            <div class="row p-2">
+                <div class="col-4">
+                    SINOPSIS
+                </div>
+                <div class="col-8">
+                    <input type="text" v-model="PELICULAS.SINOPSIS" id="txtSINOPSIS.PELICULAS" placeholder="AAA" class="form-control">
+                </div>
+            </div>
+            <div class="row p-2">
+                <div class="col-4">
+                    GENERO
+                </div>
+                <div class="col-8">
+                    <input type="text" v-model="PELICULAS.GENERO" id="txtGENERO.PELICULAS" placeholder="AAA" class="form-control">
+                </div>
+                <div class="row p-2">
+                    <div class="col-4">
+                        DURACION
+                    </div>
+                    <div class="col-8">
+                        <input type="text" v-model="PELICULAS.DURACION" id="txtDURACION.PELICULAS" placeholder="0000-0000" class="form-control">
+                    </div>
+                 </div>
+                 
+                 <div class="row p-2"> 
+                <div class="col-12 text-center">
+                    <input id="btnGuardarPELICULAS" type="submit" class="btn btn-outline-primary text-white" value="Guardar">
+                    <input type="reset" class="btn btn-outline-warning text-white" value="Limpiar">
+                    <input v-on:click="buscarPELICULAS" type="button" class="btn btn-outline-success mostrar-buscar-PELICULAS text-white" data-modulo="PELICULAS" data-form="buscar-PELICUAS" value="Buscar">
+                </div>
+            </div>
+            <div class="row p-2">
+                <div class="col-12 text-center">
+                    <div class="alert alert-success" role="alert">
+                        {{ PELICULAS.msg }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form> 
+
+<script src="public/vistas/PELICULAS/PELICULAS.js"></script>
